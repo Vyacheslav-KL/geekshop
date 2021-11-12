@@ -76,7 +76,7 @@ def contact(request):
     content = {"title": title, "visit_date": visit_date, "locations": locations}
     return render(request, "mainapp/contact.html", content)
 
- 
+
 def product(request, pk):
     title = "продукты"
     content = {
@@ -86,5 +86,4 @@ def product(request, pk):
         "basket": get_basket(request.user),
         "media_url": settings.MEDIA_URL,
     }
-    return render(request, "mainapp/product.html", content) 
-      
+    return render(request, "mainapp/product.html", content)

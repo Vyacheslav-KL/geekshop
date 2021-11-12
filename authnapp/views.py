@@ -57,4 +57,3 @@ def edit(request):
     edit_form = ShopUserEditForm(instance=request.user)
     content = {"title": title, "edit_form": edit_form, "media_url": settings.MEDIA_URL}
     return render(request, "authnapp/edit.html", content)
-    
