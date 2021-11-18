@@ -162,4 +162,3 @@ def product_update(request, pk):
 def product_delete(request, pk):
     response = redirect("admin:categories")
     return response
-    
