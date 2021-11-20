@@ -14,4 +14,3 @@ def mail_to(input_str):
     link_mailto = ET.Element("a", {"href": f"mailto:{input_str}"})
     link_mailto.text = input_str
     return mark_safe(ET.tostring(link_mailto, encoding="unicode"))
-    
