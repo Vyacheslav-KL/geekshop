@@ -11,4 +11,3 @@ def basket(request):
     return {
         "basket": basket,
     }
-    
