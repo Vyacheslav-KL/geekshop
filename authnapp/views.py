@@ -109,4 +109,3 @@ def verify(request, email, activation_key):
         print(f"error activation user : {e.args}")
 
     return HttpResponseRedirect(reverse("main"))
-    
