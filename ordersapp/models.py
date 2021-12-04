@@ -67,4 +67,3 @@ class OrderItem(models.Model):
     @staticmethod
     def get_item(pk):
         return get_object_or_404(OrderItem, pk=pk)
-        
