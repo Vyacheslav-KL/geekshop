@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db import transaction
 from django.db.models.signals import pre_delete, pre_save
 from django.dispatch import receiver
@@ -12,7 +13,7 @@ from basketapp.models import Basket
 from mainapp.models import Product
 from ordersapp.forms import OrderItemForm
 from ordersapp.models import Order, OrderItem
-from django.contrib.auth.mixins import LoginRequiredMixin
+
 
 class OrderList(LoginRequiredMixin, ListView):
     model = Order
@@ -111,6 +112,7 @@ class OrderItemsUpdate(UpdateView):
             self.object.delete()
 
         return super(OrderItemsUpdate, self).form_valid(form)
+
 
 class OrderDelete(DeleteView):
     model = Order
