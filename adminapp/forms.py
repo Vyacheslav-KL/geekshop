@@ -24,6 +24,7 @@ class ProductCategoryEditForm(forms.ModelForm):
         model = ProductCategory
         fields = "__all__"
 
+
 class ProductEditForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(ProductEditForm, self).__init__(*args, **kwargs)
