@@ -6,13 +6,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
+<<<<<<< HEAD
         ("ordersapp", "0001_orders"),
+=======
+        ('ordersapp', '0001_orders'),
+>>>>>>> a618191eb1b029e26c1bc97a38a86eab7bed6b2e
     ]
 
     operations = [
         migrations.AlterField(
+<<<<<<< HEAD
             model_name="order",
             name="is_active",
             field=models.BooleanField(db_index=True, default=True, verbose_name="активен"),
+=======
+            model_name='order',
+            name='is_active',
+            field=models.BooleanField(db_index=True, default=True, verbose_name='активен'),
+>>>>>>> a618191eb1b029e26c1bc97a38a86eab7bed6b2e
         ),
     ]
