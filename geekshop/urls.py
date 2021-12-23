@@ -21,4 +21,8 @@ if settings.DEBUG:
     import debug_toolbar
 
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+<<<<<<< HEAD
     urlpatterns += [re_path(r"^__debug__/", include(debug_toolbar.urls))]
+=======
+    urlpatterns += [re_path(r"^__debug__/", include(debug_toolbar.urls))]
+>>>>>>> a618191eb1b029e26c1bc97a38a86eab7bed6b2e
